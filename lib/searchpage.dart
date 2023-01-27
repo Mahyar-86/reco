@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:recop/theme.dart';
-<<<<<<< HEAD
 import 'package:recop/model/moviemodel.dart';
 
 
@@ -30,15 +29,6 @@ class _searchpageState extends State<searchpage> {
     });
   }
 
-=======
-
-
-class searchpage extends StatelessWidget {
-  const searchpage({Key? key}) : super(key: key);
-  void updatelist(String value){
-
-  }
->>>>>>> origin/main
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,16 +43,10 @@ class searchpage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-<<<<<<< HEAD
               Text("Search for a Movie", style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 30.0, fontWeight: FontWeight.w600),),
               SizedBox(height: 20.0,),
               TextField(
                 onChanged: (value)=> updatelist(value),
-=======
-              Text("Search for movie", style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 30.0, fontWeight: FontWeight.w600),),
-              SizedBox(height: 20.0,),
-              TextField(
->>>>>>> origin/main
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                     filled: true,
@@ -71,14 +55,12 @@ class searchpage extends StatelessWidget {
                     hintStyle: TextStyle(color: accentColor),
                     hintText: "Search",
                     prefixIcon: Icon(Icons.search, color: accentColor, size: 30.0,),
-                    prefixIconColor: Colors.purple.shade900,
                 ),
               ),
               SizedBox(
                 height: 20,
               ),
               Expanded(
-<<<<<<< HEAD
                 child: display_list.length == 0 ? Center(child: Text("No result found", style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 20.0, fontWeight: FontWeight.w400),)):ListView.builder(
                     itemCount: display_list.length,
                     itemBuilder: (context, index) => ListTile(
@@ -88,9 +70,6 @@ class searchpage extends StatelessWidget {
                       leading: Image.network(display_list[index].movie_poster_url!),
                     )
                 ),
-=======
-                child: ListView(),
->>>>>>> origin/main
               ),
             ],
           ),
