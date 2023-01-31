@@ -5,7 +5,6 @@ import 'package:recop/model/moviemodel.dart';
 
 class searchpage extends StatefulWidget {
 
-
   @override
   State<searchpage> createState() => _searchpageState();
 }

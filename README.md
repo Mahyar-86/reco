@@ -1,4 +1,4 @@
 # Reco
 Reco, a service to recommend content based on your mood and interest
 
-![Reco Logo](/Logo.jpg)
+![Reco Logo](/Reco_logo.png)
